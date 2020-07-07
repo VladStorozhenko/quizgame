@@ -1,0 +1,34 @@
+[
+    {
+      "question": "Что нужно указывать на самом начале HTML документа?",
+      "choice1": "<!DOCTYPE html>",
+      "choice2": "<html>",
+      "choice3": "<start>",
+      "choice4": "Ничего писать не надо",
+      "answer": 1
+    },
+    {
+      "question": "Какой тег добавит на страницу пронумерованный список?",
+      "choice1": "<li>",
+      "choice2": "<list>",
+      "choice3": "<ol>",
+      "choice4": "<ul>",
+      "answer": 3
+    },
+    {
+      "question": "Какой тег добавит самый большой заголовок?",
+      "choice1": "<head>",
+      "choice2": "<h6>",
+      "choice3": "<heading>",
+      "choice4": "<h1>",
+      "answer": 4
+    },
+    {
+      "question": "Какой тег добавит на страницу таблицу?",
+      "choice1": "<box>",
+      "choice2": "<table>",
+      "choice3": "<div>",
+      "choice4": "<htmltable>",
+      "answer": 2
+    }
+  ]

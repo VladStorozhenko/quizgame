@@ -1,0 +1,108 @@
+@media screen and (min-width: 1440px) {
+    #game {
+        width: 60%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    #game {
+        width: 80%;
+    }
+}
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgba(86, 165, 235, .25);
+    background-color: white;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem rgba(86,185,235,0.5);
+    transform: translateY(-0.2rem);
+    transition: transform 150ms;
+}
+
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: #56a5eb;
+    color: white;
+}
+
+.choice-text {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.chosen {
+    animation: fade-in .1s ease-in;
+    background: rgba(230, 230, 230, 0.5);
+}
+
+/* HUD */
+
+#hud {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #56a5eb;
+    margin-top: 1.5rem;
+}
+
+#progressBarFull {
+    height: 3.4rem;
+    background-color: #56a5eb;
+    width: 0%;
+}
+
+/* Loader */
+#loader {
+    border: 1rem double white;
+    border-radius: 50%;
+    border-top: 0.5rem dotted #56a5eb;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes fade-in {
+    0% {
+        background: white;
+    }
+    100% {
+        background: rgba(230,230,230,0.5);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+        border-top-color: green;
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        border-top-color: #56a5eb;
+    }
+}
